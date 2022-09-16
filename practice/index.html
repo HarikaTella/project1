@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Reva University</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header{
+            min-height: 100vh;
+            width:100%;
+            background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/revauniversityimg.jpeg);
+            background-position: center;
+            background-size: cover;
+            position:relative;
+        }
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav img{
+            width:150px;
+        }
+        .nav-links{
+            flex:1;
+            text-align:right;
+        }
+        .nav-links ul li{
+            list-style:none;
+            display:inline-block;
+            padding:8px 12px;
+            position:relative;
+        }
+        .nav-links ul li a{
+            color:whitesmoke;
+            text-decoration:none;
+            font-size: 13px;
+        }
+        .nav-links ul li::after{
+            content:'';
+            width:0%;
+            height: 2px;
+            background:goldenrod;
+            display:block;
+            margin:auto;
+            transition:0.5s;
+        }
+        .nav-links ul li:hover::after{
+            width:100%;
+        }
+        .text-box{
+            width:90%;
+            color:whitesmoke;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 55px;
+            color:pink;
+        }
+        .text-box p{
+            margin:10px 0 40px;
+            font-size: 14px;
+            color:whitesmoke;
+        }
+        .hero-btn{
+            display:inline-block;
+            text-decoration:none;
+            color:whitesmoke;
+            border:1px solid whitesmoke;
+            padding:12px 34px;
+            font-size: 13px;
+            background:transparent;
+            position:relative;
+            cursor:pointer;
+        }
+        .hero-btn:hover{
+            border:1px solid pink;
+            background:purple;
+            transition:1s;
+        }
+        .course{
+            width:80%;
+            margin:auto;
+            text-align:center;
+            padding-top:100px;
+        }
+        .course h1{
+            font-size:36px;
+            font-weight:600;
+        }
+        .course p{
+            color:palevioletred;
+            font-size:14px;
+            font-weight: 300;
+            line-height:22px;
+            padding:10px;
+        }
+        .row{
+            margin-top: 5%;
+            display:flex;
+            justify-content:space-between;
+        }
+        .course-col{
+            flex-basis:31%;
+            background:lightgrey;
+            border-radius:10px;
+            margin-bottom:5%;
+            padding:20px 12px;
+            box-sizing:border-box;
+            transition:0.5s;
+        }
+        .course-col h3{
+            text-align:center;
+            font-weight:600;
+            margin:10px 0;
+        }
+        .course-col:hover{
+            box-shadow: 0 0 20px 0px rgb(0,0,0.2);
+        }
+        .facilities{
+            width:80%;
+            margin:auto;
+            text-align:center;
+            padding-top:50px;
+        }
+        .facilities p{
+            color:palevioletred;
+            font-size:14px;
+            font-weight: 300;
+            line-height:22px;
+            padding:10px;
+        }
+        .facilities-col{
+            flex-basis:32%;
+            border-radius: 10px;
+            margin-bottom:30px;
+            position:relative;
+            overflow:hidden;
+        }
+        .facilities-col img{
+            width:100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .layer{
+            background:transparent;
+            height:100%;
+            width:100%;
+            top:0;
+            left:0;
+            position:absolute;
+            transition: o.5s;
+        }
+        .layer:hover{
+            background:rgba(231, 134, 179, 0.7);
+        }
+        .layer h3{
+            width:100%;
+            font-weight: 500;
+            font-size: 26px;
+            bottom:0;
+            left:50%;
+            transform:translateX(-50%);
+            position:absolute;
+            opacity:0;
+            transition:0.5s;
+        }
+        .layer:hover h3{
+            bottom:49%;
+            opacity:1;
+        }
+        </style>
+     </head>
+    <body >
+       <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/reva-university-logo1.png" width="200" height="100"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+<div class="text-box">
+    <h1>Top University in Karnataka</h1>
+    <p>Reva University is one of the most top universities in Karnataka.Reva University is meant for 'The Temple of Learning'.<br>Reva University provides u many facilities which includes many clubs in which students are actively participateing in them.</p>
+    <a href="" class="hero-btn">Visit to know more about RevaUniversity</a>
+</div>
+       </section>
+       <section class="course">
+        <h1>Courses we Offer</h1>
+        <p>there are many courses available here.you can just go through the page in detail.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Pre University</h3>
+                <p>Here in RevaUniversity,we provide education for pu students.students can get admission for NEET course as well as JEE main courses.</p>
+            </div>
+            <div class="course-col">
+                <h3>UG:Under Graduation</h3>
+                <p>Here students can for technical and non technical courses.</p>
+            </div>
+            <div class="course-col">
+                <h3>PG:Post Graduation</h3>
+                <p>Here students can join for completeing their post graduation aftercompleting their bachelor's.</p>
+            </div>
+        </div>
+       </section>
+       <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>The best campus in the Karnataka which is meant for the clean and green campus all over the nation.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/Swami-Vivekananda-Blockimg.jpg">
+                <div class="layer">
+                    <h3>CAMPUS</h3>
+                </div>
+            </div>
+            <div class="facilities-col">
+                <img src="images/libraryimg.webp">
+                <div class="layer">
+                    <h3>LIBRARY</h3>
+                </div>
+            </div>
+            <div class="facilities-col">
+                <img src="images/playgroundimg.jpg">
+                <div class="layer">
+                    <h3>PLAY GROUND</h3>
+                </div>
+            </div>
+        </div>
+       </section>
+
+    </body>
+</html>
